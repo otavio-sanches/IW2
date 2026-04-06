@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15 Exercícios de JavaScript</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>15 Exercícios de JavaScript</h1>
+            <p>Kauã Fernandes e Otávio Sanches - 2°C</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="cards-grid">
+            <div class="card" onclick="ex1()">
+                <div class="card-header">
+                    <span class="badge badge-blue">Condicionais</span>
+                    <span class="card-number">#1</span>
+                </div>
+                <h3 class="card-title">Par ou Ímpar</h3>
+                <p class="card-description">Peça um número ao usuário e exiba se ele é par ou ímpar.</p>
+                <button class="btn" onclick="event.stopPropagation(); ex1()">Executar</button>
+            </div>
+
+            <div class="card" onclick="ex2()">
+                <div class="card-header">
+                    <span class="badge badge-blue">Condicionais</span>
+                    <span class="card-number">#2</span>
+                </div>
+                <h3 class="card-title">Verificação de Maioridade</h3>
+                <p class="card-description">Solicite a idade do usuário e informe se ele é maior ou menor de idade.</p>
+                <button class="btn" onclick="event.stopPropagation(); ex2()">Executar</button>
+            </div>
+
+            <div class="card" onclick="ex3()">
+                <div class="card-header">
+                    <span class="badge badge-green">Laços</span>
+                    <span class="card-number">#3</span>
+                </div>
+                <h3 class="card-title">Contagem de 1 a 10</h3>
+                <p class="card-description">Exiba os números de 1 a 10 no console usando um laço for.</p>
+                <button class="btn" onclick="event.stopPropagation(); ex3()">Executar</button>
+            </div>
+
+            <div class="card" onclick="ex4()">
+                <div class="card-header">
+                    <span class="badge badge-green">Laços</span>
+                    <span class="card-number">#4</span>
+                </div>
+                <h3 class="card-title">Contagem Regressiva</h3>
+                <p class="card-description">Peça um número ao usuário e exiba uma contagem regressiva até 0.</p>
+                <button class="btn" onclick="event.stopPropagation(); ex4()">Executar</button>
+            </div>
+
+            <div class="card" onclick="ex5()">
+                <div class="card-header">
+                    <span class="badge badge-purple">Matemática</span>
+                    <span class="card-number">#5</span>
+                </div>
+                <h3 class="card-title">Tabuada</h3>
+                <p class="card-description">Peça um número e exiba a tabuada de 1 a 10 usando um laço for.</p>
+                <button class="btn" onclick="event.stopPropagation(); ex5()">Executar</button>
+            </div>
+
+            <div class="card" onclick="ex6()">
+                <div class="card-header">
+                    <span class="badge badge-purple">Matemática</span>
+                    <span class="card-number">#6</span>
+                </div>
+                <h3 class="card-title">Somatório</h3>
+                <p class="card-description">Solicite um número e some todos os números de 1 até ele.</p>
+                <button class="btn" onclick="event.stopPropagation(); ex6()">Executar</button>
+            </div>
+
+            <div class="card" onclick="ex7()">
+                <div class="card-header">
+                    <span class="badge badge-purple">Matemática</span>
+                    <span class="card-number">#7</span>
+                </div>
+                <h3 class="card-title">Número Primo</h3>
+                <p class="card-description">Peça um número ao usuário e informe se ele é primo ou não.</p>
+                <button class="btn" onclick="event.stopPropagation(); ex7()">Executar</button>
+            </div>
+
+            <div class="card" onclick="ex8()">
+                <div class="card-header">
+                    <span class="badge badge-orange">Validação</span>
+                    <span class="card-number">#8</span>
+                </div>
+                <h3 class="card-title">Login Simples</h3>
+                <p class="card-description">Peça usuário e senha. Se errar, peça novamente até acertar.</p>
+                <button class="btn" onclick="event.stopPropagation(); ex8()">Executar</button>
+            </div>
+
+            <div class="card" onclick="ex9()">
+                <div class="card-header">
+                    <span class="badge badge-purple">Matemática</span>
+                    <span class="card-number">#9</span>
+                </div>
+                <h3 class="card-title">Soma de Números Positivos</h3>
+                <p class="card-description">Some números até que o usuário digite um número negativo.</p>
+                <button class="btn" onclick="event.stopPropagation(); ex9()">Executar</button>
+            </div>
+
+            <div class="card" onclick="ex10()">
+                <div class="card-header">
+                    <span class="badge badge-pink">Jogos</span>
+                    <span class="card-number">#10</span>
+                </div>
+                <h3 class="card-title">Adivinhação</h3>
+                <p class="card-description">Escolha um número aleatório e dê dicas até o usuário acertar.</p>
+                <button class="btn" onclick="event.stopPropagation(); ex10()">Executar</button>
+            </div>
+
+            <div class="card" onclick="ex11()">
+                <div class="card-header">
+                    <span class="badge badge-purple">Matemática</span>
+                    <span class="card-number">#11</span>
+                </div>
+                <h3 class="card-title">Cálculo de Fatorial</h3>
+                <p class="card-description">Peça um número e exiba seu fatorial (n!).</p>
+                <button class="btn" onclick="event.stopPropagation(); ex11()">Executar</button>
+            </div>
+
+            <div class="card" onclick="ex12()">
+                <div class="card-header">
+                    <span class="badge badge-orange">Validação</span>
+                    <span class="card-number">#12</span>
+                </div>
+                <h3 class="card-title">Validação de Nota</h3>
+                <p class="card-description">Peça uma nota de 0 a 10 até que o usuário insira um valor válido.</p>
+                <button class="btn" onclick="event.stopPropagation(); ex12()">Executar</button>
+            </div>
+
+            <div class="card" onclick="ex13()">
+                <div class="card-header">
+                    <span class="badge badge-blue">Condicionais</span>
+                    <span class="card-number">#13</span>
+                </div>
+                <h3 class="card-title">Média de Notas</h3>
+                <p class="card-description">Calcule a média de 3 notas e informe se foi aprovado ou reprovado.</p>
+                <button class="btn" onclick="event.stopPropagation(); ex13()">Executar</button>
+            </div>
+
+            <div class="card" onclick="ex14()">
+                <div class="card-header">
+                    <span class="badge badge-green">Laços</span>
+                    <span class="card-number">#14</span>
+                </div>
+                <h3 class="card-title">Caixa Eletrônico</h3>
+                <p class="card-description">Informe as cédulas necessárias para um saque (100, 50, 20, 10, 5, 2, 1).</p>
+                <button class="btn" onclick="event.stopPropagation(); ex14()">Executar</button>
+            </div>
+
+            <div class="card" onclick="ex15()">
+                <div class="card-header">
+                    <span class="badge badge-green">Laços</span>
+                    <span class="card-number">#15</span>
+                </div>
+                <h3 class="card-title">Números Ímpares</h3>
+                <p class="card-description">Exiba todos os números ímpares de 1 até o número digitado.</p>
+                <button class="btn" onclick="event.stopPropagation(); ex15()">Executar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Desenvolvido por Kauã Fernandes e Otávio Sanches - 2°C</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
