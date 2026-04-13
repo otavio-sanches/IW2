@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ATIVIDADE</title>
+</head>
+
+<body>
+    <header>
+        <h1>Otávio Sanches Carvalho e Kauã Fernandes Carvalho</h1>
+    </header>
+    <section class="pergunta">
+        <h1>Introdução ao DOM (JavaScript)</h1>
+        <h2>Objetivo:</h2>
+        <p>Compreender o que é o DOM e como o JavaScript interage com elementos HTML.</p>
+
+        <h2>Pesquisa:</h2>
+        <h4>1. O que é DOM? Explique com suas palavras e a relação com HTML.</h4>
+        <p>O DOM é a forma como o navegador organiza o HTML em uma árvore de objetos. Com isso, o JavaScript consegue
+            acessar e modificar elementos da página (texto, estilo, estrutura).</p>
+        <h4>2. O que é um nó (node)? Explique elementos, atributos e textos.</h4>
+        <p>Um nó é qualquer parte do DOM. Os principais são:
+            Elementos → as tags HTML (div, p)
+            Atributos → informações das tags (id, class)
+            Texto → conteúdo dentro das tags</p>
+        <h4>3. Explique os métodos: getElementById(), querySelector(), querySelectorAll().</h4>
+        <p>getElementById() → seleciona um elemento pelo id (retorna só um)
+            querySelector() → retorna o primeiro elemento que corresponde ao seletor CSS
+            querySelectorAll() → retorna todos os elementos (em forma de lista)</p>
+        <h4>4. Diferença entre innerHTML e innerText.</h4>
+        <p>innerHTML → lê ou altera o conteúdo incluindo tags HTML
+            innerText → lê ou altera apenas o texto visível, sem interpretar HTML</p>
+        <h4>5. O que são eventos? Exemplos: onclick, onchange, onmouseover.</h4>
+        <p>Eventos são ações que acontecem na página e podem executar código JavaScript:
+
+            onclick → quando clica
+            onchange → quando um valor muda
+            onmouseover → quando o mouse passa por cima</p>
+    </section>
+    <section class="pratica">
+        <h1>ATIVIDADE</h1>
+        <p id="texto">Exercicio 1</p>
+        <button onclick="mudarTexto()">Clique aqui.</button>
+        <p id="texto">Exercicio 2</p>
+        <button onclick="mudarFundo()">Clique aqui.</button>
+        <p id="contador">0</p>
+        <button onclick="aumentarContador()">Aumentar contador</button>
+    </section>
+
+</body>
+<script src="script.js"></script>
+
+</html>
